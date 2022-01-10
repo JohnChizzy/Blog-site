@@ -1,0 +1,26 @@
+<%-include("partials/header")-%>
+
+  <div class="container-fluid sign-up">
+    <h2>Sign in Here</h2>
+  <form  name ="frmRegister" method="post" action="register.aspx" onsubmit="return validate(this)" >
+    <div>
+      <label for= "txtUserName">Username</label>
+      <input type ="text" name="txtUsername" id="txtUserName" size="12" class="txt-input" placeholder="Username" /><span class="message"></span>
+    </div>
+
+    <div>
+      <label for="txtPassword">Password</label>
+      <input type="password" name="txtPassword" id="txtPassword" size="12"/><span class="message"></span>
+    </div>
+
+    <div>
+      <input class="sub-sign" type="submit" value="Sign In"/>
+    </div>
+    <div>
+      <p>Don't have an Account? <a class="red-text" href="signup.html">Sign Up</a></p>
+    </div>
+
+  </form>
+  </div>
+
+<%-include("partials/footer")-%>

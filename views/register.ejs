@@ -1,0 +1,38 @@
+
+<%-include("partials/header")-%>
+
+  <!-- Forms -->
+  <div class="sign-up">
+    <h2>Create Your Account Here</h2>
+  <form  name ="frmRegister" method="post" action="register.aspx" onsubmit="return validate(this)" >
+    <div>
+      <label for= "txtUserName">Username</label>
+      <input type ="text" name="txtUsername" id="txtUserName" size="12" class="txt-input" placeholder="Username" /><span class="message">*Use 6 or more characters</span>
+    </div>
+    <div>
+      <label for="fname">First Name</label>
+      <input type="text" name="firstname" id="fname" class="txt-input" placeholder="Your name">
+    </div>
+    <div>
+      <label for="lname">Last Name</label>
+      <input type="text" name="lastname" id="lname" class="txt-input" placeholder="Your last name">
+    </div>
+    <div>
+      <label for="txtPassword">Password</label>
+      <input type="password" name="txtPassword" id="txtPassword" size="12"/><span class="message">*Use 6 or more characters</span>
+    </div>
+    <div>
+      <label for="txtPassword2">Confirm your password</label>
+      <input type="password" name="txtPassword2" id="txtPassword2" size="12"/><span class="message"></span>
+    </div>
+    <div>
+      <input class="sub-sign" type="submit" value="Sign Up"/>
+    </div>
+    <div>
+      <p>Already have an Account? <a class="red-text" href="signin.html">Sign In</a></p>
+    </div>
+
+  </form>
+  </div> <!-- End form -->
+
+<%-include("partials/footer")-%>
